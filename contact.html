@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="navbar">
+  <div class="logo"><a href="index.html"><img src="assets/logo.svg" alt="WebXite Logo" class="logo-img"></a></div>
+  <button class="hamburger" onclick="toggleMenu()">☰</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="login.html">Sign In</a></li>
+  </ul>
+</nav>
+<form action="https://formspree.io/f/yourFormID" method="POST" class="contact-form" data-aos="fade-up">
+  <h2>Contact Us</h2>
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="_replyto" placeholder="Email Address" required>
+  <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+  <button type="submit" class="btn">Send Message</button>
+</form>
+<footer>
+  <p>&copy; 2025 WebXite. All rights reserved.</p>
+</footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

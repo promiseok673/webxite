@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Account</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="navbar">
+  <div class="logo"><a href="index.html"><img src="assets/logo.svg" alt="WebXite Logo" class="logo-img"></a></div>
+  <button class="hamburger" onclick="toggleMenu()">☰</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="login.html">Sign In</a></li>
+  </ul>
+</nav>
+<section class="auth-section">
+    <form class="auth-form" data-aos="fade-up">
+      <h2>Create Account</h2>
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="password" name="confirm" placeholder="Confirm Password" required>
+      <button type="submit" class="btn">Sign Up</button>
+      <p class="auth-note">Already have an account? <a href="login.html">Sign In</a></p>
+    </form>
+  </section>
+<footer>
+  <p>&copy; 2025 WebXite. All rights reserved.</p>
+</footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

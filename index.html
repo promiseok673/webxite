@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WebXite | Professional Web Solutions</title>
+  <meta name="description" content="WebXite helps businesses grow with clean, responsive websites, smooth animations, and modern design.">
+  <meta name="keywords" content="WebXite, web design, responsive, modern website, SEO">
+  <meta name="author" content="WebXite Team">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="WebXite | Professional Web Solutions">
+  <meta property="og:description" content="We build clean, modern, responsive websites with animations and professional styling.">
+  <meta property="og:image" content="https://yourdomain.com/assets/assets\WebXite _ Professional Web Solutions - Google Chrome 6_26_2025 12_51_16 AM.png">
+  <meta property="og:url" content="https://yourdomain.com">
+  <meta property="og:type" content="website">
+  <title>WebXite | Responsive Webpage</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+  <div class="logo"><a href="index.html"><img src="assets/logo.svg" alt="WebXite Logo" class="logo-img"></a></div>
+  <button class="hamburger" onclick="toggleMenu()">☰</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="login.html">Sign In</a></li>
+  </ul>
+</nav>
+<script>
+  function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('active');
+  }
+</script>
+  </header>
+
+<section class="hero">
+  <div class="hero-content" data-aos="fade-up">
+    <h1>Welcome to WebXite</h1>
+    <p>Your go-to place for awesome content</p>
+    <a href="#" class="btn" onclick="openModal()">Get Started</a>
+  </div>
+</section>
+
+  <section class="cards">
+    <div class="card" data-aos="fade-up" data-aos-delay="100">
+      <h3>Fast</h3>
+      <p>Lightning-fast performance for your needs.</p>
+    </div>
+    <div class="card" data-aos="fade-up" data-aos-delay="200">
+      <h3>Responsive</h3>
+      <p>Works great on all screen sizes.</p>
+    </div>
+    <div class="card"data-aos="fade-up" data-aos-delay="300">
+      <h3>Modern</h3>
+      <p>Clean and up-to-date design.</p>
+    </div>
+  </section>
+
+  <section class="pricing" data-aos="fade-up">
+  <h2>Our Services</h2>
+  <div class="pricing-cards">
+    <div class="pricing-card" data-aos="fade-up">
+      <h3>Basic Plan</h3>
+      <p class="price">$49/mo</p>
+      <ul><li>Design Layout</li><li>Responsive Pages</li><li>Basic SEO</li></ul>
+      <a href="#" class="btn">Choose</a>
+    </div>
+    <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+      <h3>Standard Plan</h3>
+      <p class="price">$99/mo</p>
+      <ul><li>Everything in Basic</li><li>CMS Setup</li><li>Analytics</li></ul>
+      <a href="#" class="btn">Choose</a>
+    </div>
+    <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
+      <h3>Pro Plan</h3>
+      <p class="price">$199/mo</p>
+      <ul><li>All Features</li><li>eCommerce Integration</li><li>Premium Support</li></ul>
+      <a href="#" class="btn">Choose</a>
+    </div>
+  </div>
+</section>
+
+<form action="https://formspree.io/f/yourFormID" method="POST" class="contact-form" data-aos="fade-up">
+  <h2>Contact Us</h2>
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="_replyto" placeholder="Email Address" required>
+  <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+  <button type="submit" class="btn">Send Message</button>
+</form>
+
+  <footer>
+    <p>&copy; 2025 WebXite. All rights reserved.</p>
+  </footer>
+  <div id="modal" class="modal-overlay">
+  <div class="modal">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2>Create Account</h2>
+    <form class="auth-form">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit" class="btn">Sign Up</button>
+      <p class="auth-note">Already have an account? <a href="login.html">Sign In</a></p>
+    </form>
+  </div>
+</div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+</script>
+<script>
+  function openModal() {
+    document.getElementById('modal').style.display = 'flex';
+  }
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  // Optional: close modal when clicking outside the box
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
+  }
+</script>
+
+</html>
