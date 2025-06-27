@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -759,6 +758,6 @@ color: #ccc;
 /* On smaller screens, reduce width slightly */
 @media (max-width: 768px) {
   .logo-img {
-    height: 80px;
+    height: 76px;
   }
 }
