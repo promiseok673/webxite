@@ -759,6 +759,6 @@ color: #ccc;
 /* On smaller screens, reduce width slightly */
 @media (max-width: 768px) {
   .logo-img {
-    height: 40px;
+    height: 80px;
   }
 }
